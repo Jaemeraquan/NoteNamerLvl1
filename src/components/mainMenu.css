@@ -1,0 +1,142 @@
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optionally set a height for the parent container, e.g., 100% of viewport height */
+}
+.main-menu {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 1;
+  font-size: 3.15vw;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling on smaller screens */
+}
+.button-container {
+  display: flex; /* Display buttons in a row */
+  align-items: center; /* Center items vertically within the container */
+}
+button {
+  border-radius: 60px 60px 60px 60px;
+  border: 0px solid transparent;
+  margin: 1em;
+  padding: 1vw 2vw;
+  font-size: 4.15vw;
+  font-weight: 1;
+  color: #ffffff;
+  box-shadow: 6px 6px 18px #666 ;
+  font-family: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.25s;
+  background-color: #d45b2a;
+  transition-duration: 0.4s;
+}
+button.viewscore{
+  width: 30vw;
+}
+button:hover {
+  border-color: #02031d;
+  background-color: rgb(216, 132, 99);
+  color: black
+}
+
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Add responsive styles for smaller screens (e.g., tablets) */
+@media (max-width: 768px) {
+.button {
+  font-size: 6vw; /* Increase font size for tablets */
+}
+
+/* Additional adjustments for smaller screens */
+}
+
+/* Add responsive styles for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+.button {
+  font-size: 8vw; /* Increase font size for mobile */
+}
+
+button.viewscore {
+  width: 50vw; /* Adjust button width for mobile */
+}
+
+/* Additional adjustments for smaller screens */
+}
+
+/* Image Sizes */
+@media (max-width: 768px) {
+.staff {
+  max-width: 100%; /* Reduce image width for tablets */
+}
+.fretboard {
+  max-width: 30%;
+}
+}
+
+/* Image Sizes for smaller screens */
+@media (max-width: 480px) {
+.staff {
+  max-width: 70%; /* Restore full image width for mobile */
+}
+.fretboard {
+  max-width: 30%;
+}
+}
+
+/* Correct Button */
+.correct-button {
+background-color: green;
+color: white;
+/* Add any other styles for the correct button */
+}
+.correct-button:hover {
+background-color: green;
+color: white;
+/* Add any other styles for the correct button */
+}
+
+/* Incorrect Button */
+.incorrect-button {
+background-color: red;
+color: white;
+animation: shake 0.5s ease ;
+}
+
+.incorrect-button:hover {
+background-color: red;
+color: white;
+animation: shake 0.3s ease ;
+}
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -1,0 +1,143 @@
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height for full viewport height */
+}
+
+#response {
+  text-align: center;
+}
+
+.staffquiz {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  font-size: 3.15vw;
+  max-width: 100%;
+  padding: 2%; /* Adjust padding for content spacing */
+  text-align: center;
+}
+
+.staff {
+  max-width: 100%;
+  height: auto;
+}
+
+button:hover {
+  border-color: #02031d;
+}
+
+
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.dropdown.dropdown1 {
+  display: inline-block;
+  border-radius: 60px 60px 60px 60px;
+  position: absolute;
+  top: 4vw; /* Adjust the top position as needed */
+  left: 65vw; /* Adjust the right position as needed */
+  margin: 0;
+  line-height: 0;
+  font-size: 4.15vw;
+  font-weight: 1;
+  color: #ffffff;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  box-shadow: 6px 6px 18px #666 ;
+  position: relative;
+  background-color: #d45b2a;;
+    color: #ffffff;
+  width: 20vw;
+  height: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  height: auto;
+  background-color: transparent;
+  color: black;
+  width: 100%; /* Use width instead of min-width for full width */
+  top: 7.5vw;
+  left: -5; /* Adjust left positioning */
+  z-index: 1;
+  padding: 1vw 2vh;
+}
+.dropdown:hover {
+  border-color: #02031d;
+    background-color: rgb(216, 132, 99);;
+    color: black
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  font-weight: 1000;
+}
+
+.relative-container {
+  position: relative;
+}
+
+.hint {
+  
+  position: absolute; /* Position the image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image cover the entire dropdown */
+  height: auto;
+  object-fit: cover; /* Maintain aspect ratio while covering the space */
+}
+
+.desc {
+  padding: 0;
+  text-align: center;
+}
+
+.scorescreen {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-section {
+  white-space: pre-line;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.answer.key {
+  font-size: 4.15vw; /* Adjust the size for mobile */
+  padding: 1vw 2vw; /* Adjust padding for mobile */
+  margin: 3vw; /* Adjust margin for mobile */
+
+}
+
+.response-container {
+  min-height: 3em;
+  height: auto; /* Let the height be flexible for content */
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling on smaller screens */
+}
