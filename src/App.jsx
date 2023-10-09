@@ -151,8 +151,8 @@ useEffect(() => {
 }, []);
 
   function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
+    for (let i = 1; i < array.length; i++) {
+      const j = Math.floor(Math.random() * (array.length - i)) + 1;
       [array[i], array[j]] = [array[j], array[i]];
     }
   }
@@ -190,8 +190,10 @@ useEffect(() => {
     // setResponse(randomMessage);
     //   document.getElementById("response").style.color = "green";
     //   document.getElementById("response").style.color = "green";
-      
-        play(); // Use the regular play function
+    console.log("Playing audio:", questions[currentQuestion].answeraudio);
+    console.log("play function:", play); // Check if play is defined
+      console.log(questions[currentQuestion].answeraudio);
+        play(questions[currentQuestion].answeraudio); // Use the regular play function
   
       setIsAnswered(true);
       setTimeout(() => {
@@ -227,7 +229,7 @@ useEffect(() => {
     setQuestions(shuffledQuestions);
     setSelectedAnswer(null)
   };
-
+ 
   return (
     <div className="app">
       { showStaffQuiz ? (
