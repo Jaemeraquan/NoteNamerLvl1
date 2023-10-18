@@ -64,7 +64,7 @@ button:hover {
 /* Add responsive styles for smaller screens (e.g., tablets) */
 @media (max-width: 768px) {
 .button {
-  font-size: 6vw; /* Increase font size for tablets */
+  font-size: 7vw; /* Increase font size for tablets */
 }
 
 /* Additional adjustments for smaller screens */
@@ -72,12 +72,34 @@ button:hover {
 
 /* Add responsive styles for even smaller screens (e.g., mobile phones) */
 @media (max-width: 480px) {
-.button {
-  font-size: 8vw; /* Increase font size for mobile */
+button {
+  font-size: 7vw; /* Increase font size for mobile */
 }
-
+.dropdown.dropdown1 {
+left: 65%; 
+font-size: 6vw;
+}
 button.viewscore {
   width: 50vw; /* Adjust button width for mobile */
+}
+.dropdown:hover .dropdown-content 
+{
+  display:none
+}
+.dropdown:active {
+  border-color: #02031d;
+    background-color: rgb(216, 132, 99);;
+    color: black
+}
+.dropdown:active .dropdown-content {
+  display: block;
+  font-weight: 1000;
+}
+.answer.key {
+  font-size: 6vw; /* Adjust the size for mobile */
+  padding: 1vw 2vw; /* Adjust padding for mobile */
+  margin: 2vw; /* Adjust margin for mobile */
+
 }
 
 /* Additional adjustments for smaller screens */
@@ -139,4 +161,28 @@ animation: shake 0.3s ease ;
 80% { transform: translate(-1px, -1px) rotate(1deg); }
 90% { transform: translate(1px, 2px) rotate(0deg); }
 100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media (max-height: 500px) {
+  /* Your styles for devices with a max height of 500 pixels */
+
+body {
+  font-size: 16px;
+}
+
+/* Increase spacing and padding for improved layout */
+.button {
+  padding: 10px;
+}
+
+/* Enlarge buttons and touch targets */
+.button {
+  width: 100px;
+  height: 40px;
+}
+
+/* Ensure responsive images that fit within their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
 }
