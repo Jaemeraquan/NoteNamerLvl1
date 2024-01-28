@@ -37,6 +37,7 @@ export default function staffQuiz({
     setShowScore(true);
   }
   return (
+  
     <div className="parent-container">
         <div
           style={{
@@ -46,6 +47,8 @@ export default function staffQuiz({
             overflow: "hidden",
           }}
         >
+          <h class="header">Level 1
+          </h>
  <div className="staffquiz">
   <button onClick={startFretboardQuiz}>Fretboard</button>
   <div class="relative-container">
